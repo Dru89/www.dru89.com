@@ -1,18 +1,32 @@
 import styled from "@emotion/styled";
 import { ReactNode } from "react";
 
+import Footer from "./Footer";
 import GlobalStyles from "./GlobalStyles";
 import Metatags, { MetatagsProps } from "./Metatags";
 import Sidebar from "./Sidebar";
 
 const ContainerDiv = styled.div({
   display: "flex",
-  backgroundColor: "#ABC8E2",
+
+  "@media screen and (max-width: 1199.95px)": {
+    flexDirection: "column",
+    height: "100%",
+  },
+
+  "@media print": {
+    margin: "0.333in 0.333in",
+  },
 
   main: {
     "@media screen": {
       margin: "50px 100px",
       flex: 1,
+      maxWidth: 800,
+    },
+
+    "@media screen and (max-width: 599.95px)": {
+      margin: 50,
     },
   },
 });
@@ -34,6 +48,7 @@ const Container = ({
       <Metatags {...meta} />
       <Sidebar />
       <main>{children}</main>
+      <Footer />
     </ContainerDiv>
   );
 };

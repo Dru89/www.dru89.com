@@ -10,6 +10,11 @@ const GlobalStyles = (): JSX.Element => {
           fontFamily:
             'system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif',
         },
+        body: {
+          "@media screen": {
+            backgroundColor: "#c4d7ed",
+          },
+        },
         p: {
           lineHeight: 1.25,
         },

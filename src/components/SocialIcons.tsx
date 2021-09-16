@@ -28,6 +28,7 @@ const links: SocialLink[] = [
 const SocialLinks = styled.ul({
   display: "flex",
   listStyleType: "none",
+  justifyContent: "center",
   margin: 0,
   padding: 0,
   li: {
@@ -64,7 +65,7 @@ const SocialIcons = (): JSX.Element => {
   return (
     <SocialLinks>
       {links.map(({ url, icon, service }) => (
-        <li>
+        <li key={url}>
           <SocialIcon href={url} target="_blank" rel="noreferrer">
             <IconWrapper>
               <FontAwesomeIcon icon={icon} role="img" aria-label={service} />

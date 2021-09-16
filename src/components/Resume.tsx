@@ -42,7 +42,7 @@ const Contact = styled.dl({
 });
 
 const Header = styled.header({
-  "@media screen": {
+  "@media (min-width: 1200px)": {
     display: "flex",
   },
   dl: { margin: 0 },
@@ -93,6 +93,10 @@ const Company = styled.dt({
   fontSize: "1.3rem",
   alignItems: "flex-end",
   marginBottom: 4,
+
+  "@media screen and (max-width: 599.95px)": {
+    display: "block",
+  },
 });
 
 const CompanyName = styled.div({
@@ -109,6 +113,11 @@ const Position = styled.dd({
   fontWeight: 500,
   margin: 0,
   fontSize: "1.05rem",
+
+  "@media screen and (max-width: 599.95px)": {
+    display: "block",
+    margin: "10px 0",
+  },
 });
 
 const PositionTitle = styled.div({
@@ -145,14 +154,24 @@ const Resume = ({
             <dt>
               <FontAwesomeIcon icon={faEnvelope} fixedWidth />
             </dt>
-            <dd>{redacted || !email ? <ContactLink /> : email}</dd>
+            <dd>
+              {redacted || !email ? (
+                <ContactLink />
+              ) : (
+                <a href={`mailto:${email}`}>{email}</a>
+              )}
+            </dd>
           </div>
-          <div>
-            <dt>
-              <FontAwesomeIcon icon={faPhone} fixedWidth />
-            </dt>
-            <dd>{redacted || !phone ? <ContactLink /> : phone}</dd>
-          </div>
+          {!redacted && phone ? (
+            <div>
+              <dt>
+                <FontAwesomeIcon icon={faPhone} fixedWidth />
+              </dt>
+              <dd>
+                <a href={`tel:${phone.replace(/[^\d+]/g, "")}`}>{phone}</a>
+              </dd>
+            </div>
+          ) : null}
           <div>
             <dt>
               <FontAwesomeIcon icon={faGlobe} fixedWidth />
