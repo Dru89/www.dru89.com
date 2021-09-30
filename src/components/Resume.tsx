@@ -1,3 +1,4 @@
+import { Global } from "@emotion/react";
 import styled from "@emotion/styled";
 import {
   faEnvelope,
@@ -6,26 +7,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "gatsby";
-import { ReactNode } from "react";
 
 export interface ResumeProps {
   redacted?: boolean;
   email?: string;
   phone?: string;
-}
-
-export interface ContactLinkProps {
-  to?: string;
-}
-
-export const ContactLink = ({
-  to = "/contact",
-}: ContactLinkProps): JSX.Element => {
-  return <Link to={to}>https://www.dru89.com{to}</Link>;
-};
-
-export interface ContactProps {
-  children: ReactNode;
 }
 
 const Contact = styled.dl({
@@ -53,6 +39,7 @@ const Header = styled.header({
   dt: {
     paddingRight: 6,
   },
+  breakAfter: "avoid-page",
 });
 
 const Lite = styled.span({
@@ -73,7 +60,6 @@ const Section = styled.section({
     margin: "1em 0 0.5em",
     fontSize: "1.5rem",
   },
-  breakInside: "avoid-page",
 });
 
 const Jobs = styled.dl({
@@ -139,6 +125,13 @@ const Resume = ({
 }: ResumeProps): JSX.Element => {
   return (
     <div>
+      <Global
+        styles={{
+          "@page": {
+            margin: "25cm",
+          },
+        }}
+      />
       <Header>
         <Title>
           <h1>
@@ -156,7 +149,7 @@ const Resume = ({
             </dt>
             <dd>
               {redacted || !email ? (
-                <ContactLink />
+                <a href="mailto:resume@dru89.com">resume@dru89.com</a>
               ) : (
                 <a href={`mailto:${email}`}>{email}</a>
               )}
@@ -177,7 +170,7 @@ const Resume = ({
               <FontAwesomeIcon icon={faGlobe} fixedWidth />
             </dt>
             <dd>
-              <ContactLink to="/" />
+              <Link to="/">https://www.dru89.com/</Link>
             </dd>
           </div>
         </Contact>
@@ -201,7 +194,7 @@ const Resume = ({
               <PositionTimeline>March 2016 – March 2019</PositionTimeline>
             </Position>
             <Position>
-              <PositionTitle>Senior Software Developer</PositionTitle>
+              <PositionTitle>Software Developer</PositionTitle>
               <PositionTimeline>November 2014 – March 2016</PositionTimeline>
             </Position>
             <JobDescription>
@@ -213,14 +206,14 @@ const Resume = ({
                 Projects include libraries like a unified design system built
                 with React components, tools for simplifying the release
                 process, and migrating all of our core services to a Kubernetes
-                ecosystem. This team also improved and simplified Web‘s core
+                ecosystem. This team also improved and simplified Web’s core
                 infrastructure, including our CDN layer, nginx-based routing
                 system, and services like a dynamic configuration service.
               </p>
               <p>
                 In the last few years, I used my role as architect to mentor
                 developers across the organization. Spending time diving in and
-                understanding Hulu‘s tech stack and teaching others how it works
+                understanding Hulu’s tech stack and teaching others how it works
                 as well. We also covered a wider variety of web fundamentals,
                 including HTTP requests, cookies, caches (both CDN and browser),
                 network requests, and more. Finally, I helped create a forum for
@@ -232,10 +225,10 @@ const Resume = ({
               <p>
                 I was the technical lead for many cross-company projects at
                 Hulu. I helped lead the initiative for unifying Hulu and Disney
-                Streaming‘s Web tech stacks. I also worked on cross-client
-                initiatives such as coordinating the development of Hulu‘s Live
+                Streaming’s Web tech stacks. I also worked on cross-client
+                initiatives such as coordinating the development of Hulu’s Live
                 Guide feature, from the design of the API to the client
-                architecture across Android, iOS, Web, tvOS, Roku, and Hulu‘s
+                architecture across Android, iOS, Web, tvOS, Roku, and Hulu’s
                 browser-based devices.
               </p>
             </JobDescription>
@@ -251,9 +244,9 @@ const Resume = ({
             </Position>
             <JobDescription>
               <p>
-                I worked as a software developer on Amazon‘s Marketplace
+                I worked as a software developer on Amazon’s Marketplace
                 services for third-party sellers, focusing on services and
-                experiences around managing a merchant‘s active orders and
+                experiences around managing a merchant’s active orders and
                 returns, as well as integrating with third-party shipping
                 companies to provide integrated shipping labels directly in the
                 merchant portal. The position focused primarily on building Java

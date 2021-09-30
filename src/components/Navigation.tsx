@@ -54,7 +54,7 @@ const Navigation = (): JSX.Element => {
           <Link to="/resume">Resume</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <a href="mailto:contact@dru89.com">Contact</a>
         </li>
       </Links>
       <SocialIconsWrapper>
