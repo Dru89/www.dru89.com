@@ -10,6 +10,10 @@ const FooterEl = styled.footer({
   "@media screen and (min-width: 1200px)": {
     display: "none",
   },
+
+  "@media print": {
+    display: "none",
+  },
 });
 
 const Footer = (): JSX.Element => {

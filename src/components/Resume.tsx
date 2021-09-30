@@ -205,43 +205,38 @@ const Resume = ({
               <PositionTimeline>November 2014 – March 2016</PositionTimeline>
             </Position>
             <JobDescription>
-              <p>TK Roles for this job</p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                blandit scelerisque lorem vitae commodo. Duis sed suscipit
-                neque. Nulla sem nisl, cursus non ipsum ac, venenatis posuere
-                nibh. Etiam quis pellentesque dui, sit amet interdum risus. Sed
-                ultrices ligula vel mauris euismod scelerisque. Curabitur eget
-                pellentesque nunc. Donec maximus mauris odio, id rhoncus ipsum
-                tincidunt non. Aliquam at lectus non enim molestie facilisis sit
-                amet nec nisl. Sed a mattis mauris, id malesuada lacus.
+                Since August 2020, I have led a team of developers focused on
+                unifying the development experience for the web organization.
+                The team focused on building common tools, platforms, and
+                libraries to simplify the development needs on other teams.
+                Projects include libraries like a unified design system built
+                with React components, tools for simplifying the release
+                process, and migrating all of our core services to a Kubernetes
+                ecosystem. This team also improved and simplified Web‘s core
+                infrastructure, including our CDN layer, nginx-based routing
+                system, and services like a dynamic configuration service.
               </p>
               <p>
-                Nullam leo odio, dapibus nec lectus et, lacinia rutrum lectus.
-                Nunc fermentum libero porttitor feugiat elementum. Fusce vel
-                turpis ac nulla scelerisque aliquam. Nulla eu sapien est. Cras
-                dignissim accumsan lacus, non hendrerit velit aliquam at. Proin
-                efficitur lectus bibendum velit interdum volutpat. Nunc vel
-                lacus id lectus scelerisque sodales vitae et diam. Nullam vitae
-                urna a nisl viverra rutrum rutrum eget dolor. Fusce hendrerit
-                ante felis, nec suscipit eros finibus eget. Suspendisse ac
-                pellentesque mi, sed hendrerit sem.
+                In the last few years, I used my role as architect to mentor
+                developers across the organization. Spending time diving in and
+                understanding Hulu‘s tech stack and teaching others how it works
+                as well. We also covered a wider variety of web fundamentals,
+                including HTTP requests, cookies, caches (both CDN and browser),
+                network requests, and more. Finally, I helped create a forum for
+                developers to regularly meet and discuss interesting things in
+                the tech space. The group welcomes members from across the
+                company to find topics that are interesting to them and host
+                discussions.
               </p>
               <p>
-                Pellentesque eget maximus nunc, vel finibus massa. Interdum et
-                malesuada fames ac ante ipsum primis in faucibus. Mauris nec
-                urna sit amet diam aliquam commodo. Aliquam convallis ut sem in
-                sodales. Pellentesque vitae diam vitae leo fringilla volutpat
-                dictum vitae sem. Suspendisse potenti. Nunc rhoncus, mi vel
-                ullamcorper rutrum, erat velit sodales tellus, vitae blandit
-                augue dui eu nisl. Praesent ornare odio ac interdum eleifend.
-                Nam consectetur, nunc sed hendrerit sagittis, dolor ipsum
-                pellentesque ante, eu laoreet nunc turpis sed justo. Nam non
-                mollis elit. Quisque rutrum ac lorem a eleifend. Suspendisse
-                quam metus, vulputate ut erat vel, luctus posuere metus. Sed
-                pulvinar imperdiet libero et laoreet. Vestibulum ultrices
-                vulputate porta. Nunc laoreet feugiat sem. Aliquam sed lectus id
-                sapien porta pretium eu non quam.
+                I was the technical lead for many cross-company projects at
+                Hulu. I helped lead the initiative for unifying Hulu and Disney
+                Streaming‘s Web tech stacks. I also worked on cross-client
+                initiatives such as coordinating the development of Hulu‘s Live
+                Guide feature, from the design of the API to the client
+                architecture across Android, iOS, Web, tvOS, Roku, and Hulu‘s
+                browser-based devices.
               </p>
             </JobDescription>
           </Job>
@@ -255,27 +250,21 @@ const Resume = ({
               <PositionTimeline>June 2012 – November 2014</PositionTimeline>
             </Position>
             <JobDescription>
-              <p>TK Roles for this job</p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                blandit scelerisque lorem vitae commodo. Duis sed suscipit
-                neque. Nulla sem nisl, cursus non ipsum ac, venenatis posuere
-                nibh. Etiam quis pellentesque dui, sit amet interdum risus. Sed
-                ultrices ligula vel mauris euismod scelerisque. Curabitur eget
-                pellentesque nunc. Donec maximus mauris odio, id rhoncus ipsum
-                tincidunt non. Aliquam at lectus non enim molestie facilisis sit
-                amet nec nisl. Sed a mattis mauris, id malesuada lacus.
+                I worked as a software developer on Amazon‘s Marketplace
+                services for third-party sellers, focusing on services and
+                experiences around managing a merchant‘s active orders and
+                returns, as well as integrating with third-party shipping
+                companies to provide integrated shipping labels directly in the
+                merchant portal. The position focused primarily on building Java
+                services and a Perl-based frontend infrastructure.
               </p>
               <p>
-                Nullam leo odio, dapibus nec lectus et, lacinia rutrum lectus.
-                Nunc fermentum libero porttitor feugiat elementum. Fusce vel
-                turpis ac nulla scelerisque aliquam. Nulla eu sapien est. Cras
-                dignissim accumsan lacus, non hendrerit velit aliquam at. Proin
-                efficitur lectus bibendum velit interdum volutpat. Nunc vel
-                lacus id lectus scelerisque sodales vitae et diam. Nullam vitae
-                urna a nisl viverra rutrum rutrum eget dolor. Fusce hendrerit
-                ante felis, nec suscipit eros finibus eget. Suspendisse ac
-                pellentesque mi, sed hendrerit sem.
+                I designed and led several initiatives for Amazon Marketplace. I
+                built a service and seller-facing API that would allow merchants
+                to process returns in bulk. I also worked on several compliance
+                features including enforcing KYC policies and GDPR for European
+                merchants.
               </p>
             </JobDescription>
           </Job>
@@ -290,20 +279,11 @@ const Resume = ({
             </Position>
             <JobDescription>
               <p>
-                Pellentesque eget maximus nunc, vel finibus massa. Interdum et
-                malesuada fames ac ante ipsum primis in faucibus. Mauris nec
-                urna sit amet diam aliquam commodo. Aliquam convallis ut sem in
-                sodales. Pellentesque vitae diam vitae leo fringilla volutpat
-                dictum vitae sem. Suspendisse potenti. Nunc rhoncus, mi vel
-                ullamcorper rutrum, erat velit sodales tellus, vitae blandit
-                augue dui eu nisl. Praesent ornare odio ac interdum eleifend.
-                Nam consectetur, nunc sed hendrerit sagittis, dolor ipsum
-                pellentesque ante, eu laoreet nunc turpis sed justo. Nam non
-                mollis elit. Quisque rutrum ac lorem a eleifend. Suspendisse
-                quam metus, vulputate ut erat vel, luctus posuere metus. Sed
-                pulvinar imperdiet libero et laoreet. Vestibulum ultrices
-                vulputate porta. Nunc laoreet feugiat sem. Aliquam sed lectus id
-                sapien porta pretium eu non quam.
+                I developed software to test cables, wrote APIs and drivers for
+                other engineers to write their own software for test machines,
+                and developed a partitioned global database that synchronizes
+                serial numbers and test information across multiple facilities
+                using the .NET framework.
               </p>
             </JobDescription>
           </Job>
