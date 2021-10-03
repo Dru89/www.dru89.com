@@ -12,7 +12,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/logo.svg",
       },
     },
     "gatsby-plugin-mdx",
@@ -21,7 +21,12 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
+        name: `// drew hays`,
+        short_name: `dru89.com`,
+        start_url: `/`,
+        background_color: `#C4D7ED`,
+        theme_color: `#132842`,
+        display: `standalone`,
         path: "./src/images/",
       },
       __key: "images",

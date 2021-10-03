@@ -9,7 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "gatsby";
 
 export interface ResumeProps {
-  redacted?: boolean;
   email?: string;
   phone?: string;
 }
@@ -29,6 +28,9 @@ const Contact = styled.dl({
 
 const Header = styled.header({
   "@media (min-width: 1200px)": {
+    display: "flex",
+  },
+  "@media print": {
     display: "flex",
   },
   dl: { margin: 0 },
@@ -118,11 +120,7 @@ const JobDescription = styled.dd({
   margin: "10px 0",
 });
 
-const Resume = ({
-  redacted = true,
-  email,
-  phone,
-}: ResumeProps): JSX.Element => {
+const Resume = ({ email, phone }: ResumeProps): JSX.Element => {
   return (
     <div>
       <Global
@@ -143,28 +141,26 @@ const Resume = ({
           </dl>
         </Title>
         <Contact>
-          <div>
-            <dt>
-              <FontAwesomeIcon icon={faEnvelope} fixedWidth />
-            </dt>
-            <dd>
-              {redacted || !email ? (
-                <a href="mailto:resume@dru89.com">resume@dru89.com</a>
-              ) : (
+          {email && (
+            <div>
+              <dt>
+                <FontAwesomeIcon icon={faEnvelope} fixedWidth />
+              </dt>
+              <dd>
                 <a href={`mailto:${email}`}>{email}</a>
-              )}
-            </dd>
-          </div>
-          {!redacted && phone ? (
+              </dd>
+            </div>
+          )}
+          {phone && (
             <div>
               <dt>
                 <FontAwesomeIcon icon={faPhone} fixedWidth />
               </dt>
               <dd>
-                <a href={`tel:${phone.replace(/[^\d+]/g, "")}`}>{phone}</a>
+                <a href={`tel:${phone.replace(/\D+/g, "")}`}>{phone}</a>
               </dd>
             </div>
-          ) : null}
+          )}
           <div>
             <dt>
               <FontAwesomeIcon icon={faGlobe} fixedWidth />

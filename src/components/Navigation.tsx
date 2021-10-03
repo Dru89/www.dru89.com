@@ -53,9 +53,13 @@ const Navigation = (): JSX.Element => {
         <li>
           <Link to="/resume">Resume</Link>
         </li>
-        <li>
-          <a href="mailto:contact@dru89.com">Contact</a>
-        </li>
+        {process.env.GATSBY_CONTACT_EMAIL_ADDRESS && (
+          <li>
+            <a href={`mailto:${process.env.GATSBY_CONTACT_EMAIL_ADDRESS}`}>
+              Contact
+            </a>
+          </li>
+        )}
       </Links>
       <SocialIconsWrapper>
         <SocialIcons />

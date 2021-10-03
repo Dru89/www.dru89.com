@@ -10,8 +10,7 @@ const ResumePage = (): JSX.Element => {
         <meta name="robots" content="noindex" />
       </Helmet>
       <Resume
-        redacted={false}
-        email={process.env.GATSBY_EMAIL_ADDRESS}
+        email={process.env.GATSBY_PRIVATE_EMAIL_ADDRESS}
         phone={process.env.GATSBY_PHONE_NUMBER}
       />
     </Container>

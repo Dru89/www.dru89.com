@@ -4,11 +4,7 @@ import Resume from "../components/Resume";
 const ResumePage = (): JSX.Element => {
   return (
     <Container>
-      <Resume
-        redacted
-        email={process.env.GATSBY_EMAIL_ADDRESS}
-        phone={process.env.GATSBY_PHONE_NUMBER}
-      />
+      <Resume email={process.env.GATSBY_RESUME_EMAIL_ADDRESS} />
     </Container>
   );
 };
