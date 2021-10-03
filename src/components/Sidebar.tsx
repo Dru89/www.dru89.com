@@ -35,13 +35,14 @@ const Aside = styled.aside({
     gridTemplateColumns: "100px auto",
     gridTemplateRows: "50px",
     flexDirection: "column",
+    fontSize: "95%",
 
     ".profile-photo": {
       gridRow: "1 / span 2",
     },
 
     "h1, ul": {
-      margin: "0 0 0 40px",
+      margin: "0 0 0 0.6rem",
     },
 
     "li:first-child": {
