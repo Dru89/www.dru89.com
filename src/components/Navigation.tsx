@@ -43,9 +43,13 @@ const SocialIconsWrapper = styled.div({
   },
 });
 
-const Navigation = (): JSX.Element => {
+export interface NavigationProps {
+  className?: string;
+}
+
+const Navigation = ({ className }: NavigationProps): JSX.Element => {
   return (
-    <Nav>
+    <Nav className={className}>
       <Links>
         <li>
           <Link to="/">Home</Link>

@@ -1,36 +1,33 @@
 import { ClassNames } from "@emotion/react";
 import { StaticImage } from "gatsby-plugin-image";
 
-const ProfilePhoto = (): JSX.Element => {
+export interface ProfilePhotoProps {
+  className?: string;
+}
+
+const ProfilePhoto = ({ className }: ProfilePhotoProps): JSX.Element => {
   return (
     <ClassNames>
       {({ css }) => (
-        <div
+        <StaticImage
+          src="../images/me.png"
+          alt="Drew Hays"
+          width={600}
+          height={600}
+          quality={100}
+          className={className}
           css={{
-            "@media screen and (max-width: 599.95px)": {
-              display: "none",
+            borderRadius: "50%",
+            "& [data-placeholder-image]": { borderRadius: "50%" },
+            "@media screen and (max-width: 1199.95px)": {
+              height: "100px",
+              width: "100px",
             },
           }}
-        >
-          <StaticImage
-            css={{
-              borderRadius: "50%",
-              "& [data-placeholder-image]": { borderRadius: "50%" },
-              "@media screen and (max-width: 1199.95px)": {
-                height: "100px",
-                width: "100px",
-              },
-            }}
-            imgClassName={css({
-              borderRadius: "50%",
-            })}
-            src="../images/me.png"
-            alt="Drew Hays"
-            width={600}
-            height={600}
-            quality={100}
-          />
-        </div>
+          imgClassName={css({
+            borderRadius: "50%",
+          })}
+        />
       )}
     </ClassNames>
   );

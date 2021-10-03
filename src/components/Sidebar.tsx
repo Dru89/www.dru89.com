@@ -31,9 +31,21 @@ const Aside = styled.aside({
   },
 
   "@media screen and (max-width: 599.95px)": {
+    display: "grid",
+    gridTemplateColumns: "100px auto",
+    gridTemplateRows: "50px",
     flexDirection: "column",
-    h1: {
-      margin: 0,
+
+    ".profile-photo": {
+      gridRow: "1 / span 2",
+    },
+
+    "h1, ul": {
+      margin: "0 0 0 40px",
+    },
+
+    "li:first-child": {
+      marginLeft: 0,
     },
   },
 
@@ -45,9 +57,9 @@ const Aside = styled.aside({
 const Sidebar = (): JSX.Element => {
   return (
     <Aside>
-      <ProfilePhoto />
-      <h1>Drew Hays</h1>
-      <Navigation />
+      <ProfilePhoto className="profile-photo" />
+      <h1 className="title">Drew Hays</h1>
+      <Navigation className="nav" />
     </Aside>
   );
 };
