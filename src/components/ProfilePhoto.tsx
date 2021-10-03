@@ -24,10 +24,10 @@ const ProfilePhoto = (): JSX.Element => {
             imgClassName={css({
               borderRadius: "50%",
             })}
-            src="../images/me.jpg"
+            src="../images/me.png"
             alt="Drew Hays"
-            width={200}
-            height={200}
+            width={600}
+            height={600}
           />
         </div>
       )}
