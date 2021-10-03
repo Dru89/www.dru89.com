@@ -28,6 +28,7 @@ const ProfilePhoto = (): JSX.Element => {
             alt="Drew Hays"
             width={600}
             height={600}
+            quality={100}
           />
         </div>
       )}
