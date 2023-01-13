@@ -1,0 +1,4 @@
+.cache
+.husky
+node_modules
+public
