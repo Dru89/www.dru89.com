@@ -186,16 +186,21 @@ function Resume({ email, phone }: ResumeProps): JSX.Element {
             </Position>
             <JobDescription>
               <p>
+                I am currently the tech lead of a team at Stripe known as
+                “Platform Abstractions”. This team owns the bootstrapping
+                experience for{" "}
+                <a href="https://stripe.com/connect">Connect Platforms</a>,
+                creating and managing all of their connected accounts—such as
+                the restaurants for DoorDash, the drivers for Lyft, or merchants
+                on Squarespace and Shopify.
+              </p>
+              <p>
                 I am the tech lead for Stripe’s Account UX Infrastructure team,
                 where we focus on creating the authentication and authorization
-                processes for{" "}
-                <a href="https://stripe.com/connect">
-                  connected accounts at Stripe
-                </a>
-                . The team focuses on providing a balance between security and
-                low friction for the users that come to Stripe through another
-                platform (such as DoorDash restaurants, Shopify stores, and
-                GitHub Sponsors).
+                processes for connected accounts at Stripe. The team provides a
+                balance between security and low friction for the users that
+                come to Stripe through another platform (such as DoorDash
+                restaurants, Shopify stores, and GitHub Sponsors).
               </p>
               <p>
                 As the tech lead, I am both responsible for some of my own
