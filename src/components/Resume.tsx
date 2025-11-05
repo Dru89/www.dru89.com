@@ -194,23 +194,19 @@ function Resume({ email, phone }: ResumeProps): JSX.Element {
                 across all of The Walt Disney Company's properties.
               </p>
               <p>
-                For our architecture, we own several applications across the web
-                for getting customers through our flows. This includes a marketing-focused
-                app that serves both landing pages and browsable content, powered by
-                an in-house content management system. It also includes a multi-tenant
-                commerce application that we deploy across Hulu, Disney+, and ESPN. We
-                also have an SDK and several libraries that we build into the browse
-                and playback experience for commerce messaging and authentication. Finally,
-                we also have a “backend-for-frontend” service that we manage for simplifying
-                our commerce flows across applications.
+                I work across all parts of our flows, starting with our marketing-focused
+                app that serves both landing pages and browsable content. I also helped
+                create a new multi-tenant commerce application that we deploy across 
+                Hulu, Disney+, and ESPN. We create several libraries that we build into the browse
+                and playback experience for commerce messaging and authentication. And we power most of this
+                through a “backend-for-frontend” service that we built for simplifying
+                our commerce flows.
               </p>
               <p>
-                Our infrastructure is built on Spinnaker and Kubernetes and our
-                platform teams work to create seamless continuous integration
-                and continuous deployment workflows for our teams. I work with
-                our platform team to plan for and implement projects like
-                blue/green deployment systems, mesh networking, and better testing
-                pipelines.
+                I also work with our platform team to scale our infrastructure 
+                to create seamless CI/CD workflows for our teams. We have worked on
+                projects like blue/green deployment systems, mesh networking, and better 
+                testing pipelines that we scale to all of our applications and services.
               </p>
             </JobDescription>
           </Job>
