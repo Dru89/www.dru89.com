@@ -188,10 +188,8 @@ function Resume({ email, phone }: ResumeProps): JSX.Element {
               <p>
                 I am currently the lead architect focused on the infrastructure
                 and architecture for our Growth, Commerce, and Identity Experience
-                teams. In this org we build client facing experiences for authentication,
-                signup, and account management across devices for Disney+, Hulu,
-                and ESPN. Our identity flows and services are also built to be used
-                across all of The Walt Disney Company's properties.
+                teams where we build identity flows across all of The Walt Disney Company.
+                We also create commerce flows across Disney+, Hulu, and ESPN apps.
               </p>
               <p>
                 I work across all parts of our flows, starting with our marketing-focused
