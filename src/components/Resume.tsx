@@ -177,35 +177,74 @@ function Resume({ email, phone }: ResumeProps): JSX.Element {
         <Jobs>
           <Job>
             <Company>
+              <CompanyName>The Walt Disney Company</CompanyName>
+              <CompanyLocation>Seattle, WA</CompanyLocation>
+            </Company>
+            <Position>
+              <PositionTitle>Senior Principal Engineer</PositionTitle>
+              <PositionTimeline>June 2024 – Present</PositionTimeline>
+            </Position>
+            <JobDescription>
+              <p>
+                I am currently the lead architect focused on the infrastructure
+                and architecture for our Growth, Commerce, and Identity Experience
+                teams. In this org we build client facing experiences for authentication,
+                signup, and account management across devices for Disney+, Hulu,
+                and ESPN. Our identity flows and services are also built to be used
+                across all of The Walt Disney Company's properties.
+              </p>
+              <p>
+                For our architecture, we own several applications across the web
+                for getting customers through our flows. This includes a marketing-focused
+                app that serves both landing pages and browsable content, powered by
+                an in-house content management system. It also includes a multi-tenant
+                commerce application that we deploy across Hulu, Disney+, and ESPN. We
+                also have an SDK and several libraries that we build into the browse
+                and playback experience for commerce messaging and authentication. Finally,
+                we also have a “backend-for-frontend” service that we manage for simplifying
+                our commerce flows across applications.
+              </p>
+              <p>
+                Our infrastructure is built on Spinnaker and Kubernetes and our
+                platform teams work to create seamless continuous integration
+                and continuous deployment workflows for our teams. I work with
+                our platform team to plan for and implement projects like
+                blue/green deployment systems, mesh networking, and better testing
+                pipelines.
+              </p>
+            </JobDescription>
+          </Job>
+          <Job>
+            <Company>
               <CompanyName>Stripe</CompanyName>
               <CompanyLocation>Seattle, WA</CompanyLocation>
             </Company>
             <Position>
               <PositionTitle>Staff Engineer</PositionTitle>
-              <PositionTimeline>January 2022 – Present</PositionTimeline>
+              <PositionTimeline>January 2022 – June 2024</PositionTimeline>
             </Position>
             <JobDescription>
               <p>
-                I am currently the tech lead of a team at Stripe known as
-                “Platform Abstractions”. This team owns the bootstrapping
+                I was the tech lead of a team at Stripe known as
+                “Platform Abstractions”. This team owned the bootstrapping
                 experience for{" "}
                 <a href="https://stripe.com/connect">Connect Platforms</a>,
                 creating and managing all of their connected accounts—such as
-                the restaurants for DoorDash, the drivers for Lyft, or merchants
+                Xero users, the drivers for Lyft, or merchants
                 on Squarespace and Shopify.
               </p>
               <p>
-                I am the tech lead for Stripe’s Account UX Infrastructure team,
-                where we focus on creating the authentication and authorization
-                processes for connected accounts at Stripe. The team provides a
+                I was also the tech lead for Stripe’s Account UX Infrastructure team,
+                where we focused on creating the authentication and authorization
+                processes for connected accounts at Stripe. The team provided a
                 balance between security and low friction for the users that
                 come to Stripe through another platform (such as DoorDash
                 restaurants, Shopify stores, and GitHub Sponsors).
               </p>
               <p>
-                As the tech lead, I am both responsible for some of my own
+                As the tech lead, I was both responsible for some of my own
                 projects and a mentor to other members of my team—helping them
-                drive their own projects. In the last year, I worked with
+                drive their own projects. While I was there, I worked with
                 developers on my team to build a new “Account Claim” flow,
                 allowing merchants to onboard to Stripe and{" "}
                 <a href="https://stripe.com/docs/connect/payouts-bank-accounts">
@@ -214,14 +253,14 @@ function Resume({ email, phone }: ResumeProps): JSX.Element {
                 .
               </p>
               <p>
-                One of my core technical focuses this year has been unifying our
+                One of my core technical focuses was unifying our
                 authentication flows into a single process, and then extending
                 that flow to be{" "}
                 <a href="https://stripe.com/docs/connect/get-started-connect-embedded-uis">
                   embedded in third party websites
                 </a>
-                . Allowing merchants on a platform to securely interact with
-                Stripe models.
+                . This allowed merchants on a platform to securely interact with
+                Stripe models through their platform's website.
               </p>
             </JobDescription>
           </Job>
